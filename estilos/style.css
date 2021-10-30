@@ -148,10 +148,12 @@ input.botao:hover {
     color: var(--cor3);
 }
 
+
 footer {
     margin-top: 30px;
     background-color: var(--cor3);
     padding: 8px;
+    height: 85px;
 }
 
 footer p {
@@ -160,7 +162,13 @@ footer p {
 
 footer p#informacoes {
     text-align: left;
-    margin-left: 3%;
+    margin-left: 5%;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+footer p#informacoes > a {
+    display: block;
 }
 
 footer a {
