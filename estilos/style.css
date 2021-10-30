@@ -5,6 +5,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
 
+@media screen and (max-width: 690px) {
+    header img {
+      display: none;
+    }
+    header h1 {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        text-indent: 0px;
+    }
+  }
+  
+
 :root {
     --cor1: #832DBD;
     --cor2: #4E10AE;
@@ -23,26 +36,30 @@
 
 body {
     font-family: 'Exo', sans-serif;
-    background-color: rgb(27, 27, 27);
+    background-color: #18171b;
 }
 
 header {
-    background-image: url(../imagens/kirito.png);
     background-color: var(--cor3);
-    background-repeat: no-repeat;
-    background-position: right;
     height: 175px;
+    display: flex;
 }
 
+
 header h1 {
-    padding: 55px 0px 0px 5%;
+    margin-top: auto;
+    margin-bottom: auto;
     font-family: var(--font_titulo);
     color: var(--cor4);
     text-shadow: -1px 2px 5px var(--cor4);
     font-weight: bold;
-    font-size: 3em;
+    font-size: 10vmin;
+    text-indent: 30px;
 }
 
+header img {
+    margin-left: auto;
+}
 
 nav {
     text-align: center;
@@ -74,6 +91,7 @@ main h1 {
     padding: 10px;
     margin-top: 20px;
     margin-left: 25px;
+
 }
 
 main p {
@@ -85,11 +103,17 @@ main p {
     text-indent: 15px;
 }
 
+main strong {
+    color: var(--cor1);
+    font-weight: bold;
+}
+
 div.bloco {
     background-color: var(--cor4);
     max-width: 330px;
     padding: 10px;
     border-radius: 0px 10px 10px 0px;
+    box-shadow: 1px 1px 5px #f037a65e;
 }
 
 div.bloco h3 {
@@ -124,3 +148,27 @@ input.botao:hover {
     color: var(--cor3);
 }
 
+footer {
+    margin-top: 30px;
+    background-color: var(--cor3);
+    padding: 8px;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer p#informacoes {
+    text-align: left;
+    margin-left: 3%;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--cor1);
+}
+
+footer a:hover {
+    color: var(--cor4);
+    text-decoration: underline;
+}
