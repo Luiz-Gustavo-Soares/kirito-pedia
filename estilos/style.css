@@ -13,10 +13,14 @@
         text-align: center;
         margin-left: auto;
         margin-right: auto;
-        text-indent: 0px;
     }
 
     div.perfil > img {
+        margin: auto;
+        display: block;
+    }
+
+    div#platoes > img {
         margin: auto;
         display: block;
     }
@@ -24,6 +28,19 @@
 
 
 @media screen and (min-width: 690px) {
+    header h1 {
+        text-indent: 30px;
+    }
+
+    
+    div#platoes {
+        display: flex;
+    }
+
+    div#platoes {
+        margin-left: auto;
+    }
+
     div.perfil {
         display: flex;
     }
@@ -68,8 +85,8 @@ header h1 {
     color: var(--cor4);
     text-shadow: -1px 2px 5px var(--cor4);
     font-weight: bold;
-    font-size: 10vmin;
-    text-indent: 30px;
+    font-size: clamp(3em, 1em + 5vw, 6em);
+
 }
 
 header img {
@@ -113,16 +130,27 @@ main h1, h2, h3{
 }
 
 main h1 {
-    font-size: 2.4em;
+    font-size: clamp(1.8em, 1em + 2vw, 3em);
 }
 
 main h2 {
-    font-size: 1.8em;
+    font-size: clamp(1.7em, 1em + 2vw, 2em);
 }
 
 main h3 {
     font-size: 1.3em;
     text-indent: 15px;
+}
+
+main div.img img {
+    display: block;
+    margin: auto;
+    max-height: 350px;
+    background-color: red;
+}
+
+main div.img {
+    background-image: linear-gradient(to left, transparent, var(--cor4), transparent);
 }
 
 main p {
@@ -135,11 +163,28 @@ main p {
     padding: 10px;
 }
 
+
+main a.blank {
+    text-decoration: none;
+    color: var(--cor1);
+}
+
+main a.blank:hover {
+    color: var(--cor4);
+}
+
+
 main strong {
     color: var(--cor1);
     font-weight: bold;
 }
 
+div#platoes img {
+    max-width: 300px;
+    border-radius: 50%;
+    border: 1px solid var(--cor4);
+    box-shadow: 1px 1px 8px var(--cor4);
+}
 
 div.perfil > img {
     width: 150px;
@@ -156,7 +201,7 @@ div.bloco {
     background-color: var(--cor4);
     max-width: 360px;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 20px 0px;
     box-shadow: 1px 1px 5px #f037a65e;
     margin-left: auto;
     margin-top: 50px;
