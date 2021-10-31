@@ -24,6 +24,11 @@
         margin: auto;
         display: block;
     }
+
+    main div#apresentacao img {
+        display: block;
+        margin: auto;
+    }
   }
 
 
@@ -46,6 +51,15 @@
     }
 
     div.perfil > img{
+        margin-left: auto;
+    }
+
+    main div#apresentacao {
+        display: flex;
+    }
+
+    main div#apresentacao img{
+        display: flex;
         margin-left: auto;
     }
 }
@@ -142,16 +156,11 @@ main h3 {
     text-indent: 15px;
 }
 
-main div.img img {
-    display: block;
-    margin: auto;
-    max-height: 350px;
-    background-color: red;
+main div#apresentacao img {
+    max-height: 300px;
+    border: 1px solid var(--cor4);
 }
 
-main div.img {
-    background-image: linear-gradient(to left, transparent, var(--cor4), transparent);
-}
 
 main p {
     color: white;
