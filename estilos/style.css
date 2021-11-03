@@ -273,6 +273,7 @@ footer p#informacoes {
 
 footer p#informacoes > a {
     display: block;
+    width: fit-content;
 }
 
 footer a {
@@ -284,3 +285,14 @@ footer a:hover {
     color: var(--cor4);
     text-decoration: underline;
 }
+
+/***
+ *      _  ___      _ _        
+ *     | |/ (_)    (_) |       
+ *     | ' / _ _ __ _| |_ ___  
+ *     |  < | | '__| | __/ _ \ 
+ *     | . \| | |  | | || (_) |
+ *     |_|\_\_|_|  |_|\__\___/ 
+ *                             
+ *                             
+ */
